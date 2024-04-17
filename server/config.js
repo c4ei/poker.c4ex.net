@@ -6,7 +6,7 @@ if (process.env.NODE_ENV !== 'production') {
 }
 
 module.exports = {
-  PORT: process.env.PORT || 5000,
+  PORT: process.env.PORT || 3112,
   JWT_SECRET: process.env.JWT_SECRET,
   MONGO_URI: process.env.MONGO_URI,
   NODE_ENV: process.env.NODE_ENV,
@@ -16,6 +16,6 @@ module.exports = {
   SMTP_PORT: process.env.SMTP_PORT,
   SMTP_USER: process.env.SMTP_USER,
   SMTP_PW: process.env.SMTP_PW,
-  FROM_NAME: 'Vintage Poker Info',
-  FROM_EMAIL: 'no-reply@vintagepoker.net',
+  FROM_NAME: 'AAH Poker Info',
+  FROM_EMAIL: 'no-reply@c4ei.net',
 };

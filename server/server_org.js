@@ -47,16 +47,3 @@ process.on('unhandledRejection', (err) => {
     process.exit(1);
   });
 });
-
-
-//
-app.use(express.static( path.join(__dirname, "../client/build") ));
-
-app.get('/', function(req,res){
-  res.sendFile( path.join(__dirname, '../client/build/index.html') );
-}) 
-//이 코드는 항상 가장 하단에 놓아야 잘됩니다. 
-app.get('*', function (req, res) {
-  res.sendFile(path.join(__dirname, '../client/build/index.html'));
-});
-
